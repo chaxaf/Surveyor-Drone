@@ -1,0 +1,37 @@
+buildscript {
+
+    repositories {
+        // Other repositories might already exist here, don't remove them, just add the new one
+        maven {
+            url 'https://maven.google.com/'
+            }
+        google()
+        jcenter()
+        maven { url 'https://artifactory.parrot.com/groundsdk-android' }
+        maven {url "https://artifactory.parrot.com/groundsdk-mobile-public"}
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.0'
+       // classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0"
+    }
+}// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+plugins {
+    id 'com.android.application' version '7.4.1' apply false
+    id 'com.android.library' version '7.4.1' apply false
+    id 'org.jetbrains.kotlin.android' version '2.0.0-Beta1' apply false
+}
+/**
+allprojects {
+    repositories{
+       // google()
+        jcenter()
+    }
+}
+ **/
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

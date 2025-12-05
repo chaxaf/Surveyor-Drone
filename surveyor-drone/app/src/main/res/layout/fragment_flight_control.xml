@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/buttonControlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+
+            <!-- Center button -->
+            <Button
+                android:id="@+id/landingBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/button_rounded_yellow"
+                android:padding= "70dp"
+                android:text=""
+                android:enabled="false"/>
+
+
+            <!-- Top button -->
+            <com.parrot.hellodrone.CustomButton
+                android:id="@+id/forwardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/landingBt"
+                app:layout_constraintEnd_toEndOf="@id/landingBt"
+                app:layout_constraintBottom_toTopOf="@id/landingBt"
+                android:background="@drawable/button_rounded_blue"
+            android:text="Forward"/>
+
+
+            <!-- Bottom button -->
+            <com.parrot.hellodrone.CustomButton
+                android:id="@+id/backwardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/landingBt"
+                app:layout_constraintStart_toStartOf="@id/landingBt"
+                app:layout_constraintEnd_toEndOf="@id/landingBt"
+                android:background="@drawable/button_rounded_blue"
+                android:text="Backward"/>
+
+            <!-- Left button -->
+            <com.parrot.hellodrone.CustomButton
+                android:id="@+id/leftButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/landingBt"
+                app:layout_constraintEnd_toStartOf="@id/landingBt"
+                app:layout_constraintBottom_toBottomOf="@id/landingBt"
+                android:background="@drawable/button_rounded_blue"
+                android:text="Left"/>
+
+            <!-- Right button -->
+            <com.parrot.hellodrone.CustomButton
+                android:id="@+id/rightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/landingBt"
+                app:layout_constraintStart_toEndOf="@id/landingBt"
+                app:layout_constraintBottom_toBottomOf="@id/landingBt"
+                android:background="@drawable/button_rounded_blue"
+                android:text="Right"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+
+
+            <!-- Center button -->
+            <Button
+                android:id="@+id/takeOffLandBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="@drawable/button_rounded_yellow"
+                android:padding= "50dp"
+                android:text="Take Off"/>
+
+            <!-- Top button -->
+            <com.parrot.hellodrone.CustomButton
+                android:id="@+id/upButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/takeOffLandBt"
+                app:layout_constraintEnd_toEndOf="@id/takeOffLandBt"
+                app:layout_constraintBottom_toTopOf="@id/takeOffLandBt"
+                android:background="@drawable/button_rounded_blue"
+                android:text="Up"/>
+
+            <!-- Bottom button -->
+            <com.parrot.hellodrone.CustomButton
+                android:id="@+id/downButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/takeOffLandBt"
+                app:layout_constraintStart_toStartOf="@id/takeOffLandBt"
+                app:layout_constraintEnd_toEndOf="@id/takeOffLandBt"
+                android:background="@drawable/button_rounded_blue"
+                android:text="Down"/>
+
+            <!-- Left button -->
+            <com.parrot.hellodrone.CustomButton
+                android:id="@+id/turnLeftButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/takeOffLandBt"
+                app:layout_constraintEnd_toStartOf="@id/takeOffLandBt"
+                app:layout_constraintBottom_toBottomOf="@id/takeOffLandBt"
+                android:background="@drawable/button_rounded_blue"
+                android:text="Turn left"/>
+
+            <!-- Right button -->
+            <com.parrot.hellodrone.CustomButton
+                android:id="@+id/turnRightButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/takeOffLandBt"
+                app:layout_constraintStart_toEndOf="@id/takeOffLandBt"
+                app:layout_constraintBottom_toBottomOf="@id/takeOffLandBt"
+                android:background="@drawable/button_rounded_blue"
+                android:text="Turn right"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp">
+
+        <!-- Button 1 -->
+        <ImageButton
+            android:id="@+id/emergencyLanding"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/siren"
+            android:background="@drawable/button_round_siren"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

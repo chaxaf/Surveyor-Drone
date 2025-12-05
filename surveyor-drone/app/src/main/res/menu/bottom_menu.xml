@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/videoStreamFragment"
+        android:title="Video stream"
+        android:icon="@drawable/video_stream_icon_bottom_menu"/>
+    <item
+        android:id="@+id/flightControlFragment"
+        android:title="Flight control"
+        android:icon="@drawable/flight_control_icon_bottom_menu"/>
+
+    <item
+        android:id="@+id/dataCollectionFragment"
+        android:title="Data collection"
+        android:icon="@drawable/data_collection_icon_bottom_menu"/>
+    <item
+        android:id="@+id/surveyPlanningFragment"
+        android:title="Survey planning"
+        android:icon="@drawable/survey_planning_icon_bottom_menu"/>
+
+    <item
+        android:id="@+id/exitFragment"
+        android:title="Exit"
+        android:icon="@drawable/login_icon_bottom_menu"/>
+
+
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/droneStateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drone State: " />
+
+    <TextView
+        android:id="@+id/droneBatteryTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Battery Level: " />
+
+    <TextView
+        android:id="@+id/gpsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS: " />
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speed: " />
+
+    <TextView
+        android:id="@+id/altitudeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Altitude: " />
+
+    <!-- Add more TextViews for other sensor data as needed -->
+
+</LinearLayout>

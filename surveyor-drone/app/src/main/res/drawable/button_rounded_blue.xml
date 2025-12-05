@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true">
+    <shape android:shape="oval">
+        <solid android:color="#75E6DA" /> <!-- Pale green when pressed -->
+    </shape>
+</item>
+<item android:state_focused="true">
+    <shape android:shape="oval">
+        <solid android:color="#75E6DA" /> <!-- Pale green when focused -->
+    </shape>
+</item>
+<item>
+    <shape android:shape="oval">
+        <solid android:color="#3498db" /> <!-- Default pale green -->
+    </shape>
+</item>
+</selector>

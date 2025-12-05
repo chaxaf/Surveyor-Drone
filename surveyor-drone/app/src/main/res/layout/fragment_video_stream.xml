@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <!-- TextView in the center -->
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/not_connected"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="visible" />
+
+        <!-- ImageView on the right -->
+        <ImageView
+            android:id="@+id/droneNotConnected"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/nowifi"
+            android:gravity="center"
+            android:visibility="visible"
+            android:padding="7dp"/>
+
+        <!-- ImageView on the right -->
+        <ImageView
+            android:id="@+id/droneConnected"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/wifi"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="7dp"/>
+
+    </LinearLayout>
+
+    <!-- res/layout/video_stream_layout.xml -->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Video stream view -->
+        <com.parrot.drone.groundsdk.stream.GsdkStreamView
+            android:id="@+id/stream_view"
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/noStream"
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+            android:src="@drawable/no_video"
+            android:gravity="center"
+            android:padding="20dp"
+            android:visibility="visible"/>
+        >
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp">
+
+        <!-- Button 1 -->
+        <ImageButton
+            android:id="@+id/emergencyLanding"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/siren"
+            android:background="@drawable/button_round_siren"
+            android:padding="8dp"
+            />
+
+        <!-- Button 2 -->
+        <Button
+            android:id="@+id/capturePhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Capture Photo"
+            android:onClick="capturePhoto" />
+
+        <ToggleButton
+            android:id="@+id/captureVideoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/color_toggle_button"
+            android:textOff="Start Video"
+            android:textOn="Stop video" />
+
+        <ImageButton
+            android:id="@+id/dataParam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

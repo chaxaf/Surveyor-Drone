@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Surveyor Drone</string>
+    <string name="take_off">Take off</string>
+    <string name="land">Land</string>
+    <string name="percentage">%1$d %%</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="pass_star">*****************</string>
+    <string name="confirm">Confirm</string>
+    <string name="pick_image">Pick image</string>
+    <string name="update">Update</string>
+    <string name="log_out">Log out</string>
+    <string name="enter">Enter</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="not_connected">Not connected</string>
+    <string name="connected">Connected</string>
+
+    <string name="download_all">Download All</string>
+    <string name="delete_all">Delete All</string>
+    <string name="no_media_prompt">There is currently no media available on the drone\'s SD card</string>
+    <string name="download_media">Download Media</string>
+    <string name="view_media">View Media</string>
+    <string name="delete_media">Delete Media</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+</resources>

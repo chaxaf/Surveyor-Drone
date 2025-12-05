@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.parrot.hellodrone.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_videoStreamFragment"
+            app:destination="@id/videoStreamFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_flightControlFragment"
+            app:destination="@id/flightControlFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_videoStreamFragment2"
+            app:destination="@id/videoStreamFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_dataCollectionFragment"
+            app:destination="@id/dataCollectionFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_surveyPlanningFragment"
+            app:destination="@id/surveyPlanningFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flightControlFragment"
+        android:name="com.parrot.hellodrone.FlightControlFragment"
+        android:label="fragment_flight_control"
+        tools:layout="@layout/fragment_flight_control" />
+    <fragment
+        android:id="@+id/videoStreamFragment"
+        android:name="com.parrot.hellodrone.VideoStreamFragment"
+        android:label="VideoStreamFragment">
+        <action
+            android:id="@+id/action_videoStreamFragment_to_dataParam"
+            app:destination="@id/dataParam" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataCollectionFragment"
+        android:name="com.parrot.hellodrone.DataCollectionFragment"
+        android:label="DataCollectionFragment" />
+    <fragment
+        android:id="@+id/surveyPlanningFragment"
+        android:name="com.parrot.hellodrone.SurveyPlanningFragment"
+        android:label="SurveyPlanningFragment" />
+    <fragment
+        android:id="@+id/exitFragment"
+        android:name="com.parrot.hellodrone.ExitFragment"
+        android:label="ExitFragment">
+        <action
+            android:id="@+id/action_exitFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataParam"
+        android:name="com.parrot.hellodrone.DataParamFragment"
+        android:label="fragment_data_param"
+        tools:layout="@layout/fragment_data_param" />
+</navigation>

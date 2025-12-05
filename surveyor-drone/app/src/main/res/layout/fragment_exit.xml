@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/QuitImage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/windowBackground"
+        app:srcCompat="@drawable/login_icon_bottom_menu" />
+
+    <TextView
+        android:id="@+id/TextExit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:text="Do you want to quit ?"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/ConfirmQuitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/YesButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Yes"
+            android:background="@drawable/button_square_pale_green"/>
+    </LinearLayout>
+
+</LinearLayout>

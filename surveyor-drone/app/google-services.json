@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "211880346161",
+    "project_id": "hellodrone-ab89a",
+    "storage_bucket": "hellodrone-ab89a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211880346161:android:cf7cb8f344fd89409a0b10",
+        "android_client_info": {
+          "package_name": "com.parrot.hellodrone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeAwR6FuDitJymikFoEWAEC2mQ4iQ-8xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
