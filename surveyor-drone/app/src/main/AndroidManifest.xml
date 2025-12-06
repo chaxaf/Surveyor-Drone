@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBd-fZvFvKaa6Y6CXQbsUawQ6JURFEHgNM"/>
+            android:value="xxx"/>
         <activity
             android:name="com.parrot.hellodrone.MainActivity"
             android:exported="true">
