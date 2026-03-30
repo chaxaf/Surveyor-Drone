@@ -52,8 +52,8 @@ The application follows a modular Android architecture:
 - Autonomous waypoint navigation
 - Takeoff / landing controls
 - Emergency stop
-
-![Flight Control UI](docs/images/flight_control.png)
+  
+<img src="docs/images/flight_control.png" width="400"/>
 
 ---
 
