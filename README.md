@@ -26,8 +26,6 @@ Core functionalities:
 
 ![System Overview](docs/images/overview.png)
 
-> From presentation – page 2
-
 ---
 
 ## Architecture
@@ -43,9 +41,7 @@ The application follows a modular Android architecture:
 - **ViewModels**: logic separation
 - **Shared ViewModel**: global drone state
 
-![Architecture Diagram](docs/images/architecture.png)
-
-> From presentation – page 4
+![Architecture Diagram](docs/images/Architecture.png)
 
 ---
 
@@ -59,8 +55,6 @@ The application follows a modular Android architecture:
 
 ![Flight Control UI](docs/images/flight_control.png)
 
-> From presentation – page 6 (right side)
-
 ---
 
 ### Video & Data Handling
@@ -71,8 +65,6 @@ The application follows a modular Android architecture:
 
 ![Video Stream UI](docs/images/video_stream.png)
 
-> From presentation – page 5 (bottom right)
-
 ---
 
 ### Mission Planning
@@ -81,7 +73,6 @@ The application follows a modular Android architecture:
 
 ![Survey Planning](docs/images/survey_planning.png)
 
-> From presentation – page 7 (center)
 
 ---
 
@@ -91,8 +82,6 @@ The application follows a modular Android architecture:
 - Multiple control modes
 
 ![Login UI](docs/images/login.png)
-
-> From presentation – page 5 (left side)
 
 ---
 
